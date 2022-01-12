@@ -1,9 +1,9 @@
-# Image Segmentation Android sample.
+# Image Segmentation Android sample with added IsiPiringku estimator
 
-The used model, DeepLab
-[https://ai.googleblog.com/2018/03/semantic-image-segmentation-with.html] is a
-state-of-art deep learning model for semantic image segmentation, where the goal
-is to assign semantic labels (e.g. person, dog, cat) to every pixel in the input
+The used model, SeeFoodDeepLab
+[https://tfhub.dev/google/lite-model/seefood/segmenter/mobile_food_segmenter_V1/1] is a
+deep learning model for semantic food image segmentation, where the goal
+is to assign semantic food labels (e.g. fruits, beverages) to every pixel in the input
 image.
 
 ## Requirements
@@ -13,20 +13,9 @@ image.
 
 ## Build and run
 
-### Step 1. Clone the TensorFlow examples source code
-
-Clone the TensorFlow examples GitHub repository to your computer to get the demo
-application.
-
-```
-git clone https://github.com/tensorflow/examples
-```
+### Step 1. Clone this examples source code
 
 ### Step 2. Import the sample app to Android Studio
-
-Open the TensorFlow source code in Android Studio. To do this, open Android
-Studio and select `Import Projects (Gradle, Eclipse ADT, etc.)`, setting the
-folder to `examples/lite/examples/image_segmentation/android`
 
 ### Step 3. Run the Android app
 
@@ -41,12 +30,12 @@ This image segmentation Android reference app demonstrates two implementation
 solutions:
 
 (1)
-[`lib_task_api`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_segmentation/android/lib_task_api)
+[`lib_task_api`](./image_segmentation/android/lib_task_api)
 that leverages the out-of-box API from the
 [TensorFlow Lite Task Library](https://www.tensorflow.org/lite/inference_with_metadata/task_library/image_segmenter);
 
 (2)
-[`lib_interpreter`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_segmentation/android/lib_interpreter)
+[`lib_interpreter`](./image_segmentation/android/lib_interpreter)
 that creates the custom inference pipleline using the
 [TensorFlow Lite Interpreter Java API](https://www.tensorflow.org/lite/guide/inference#load_and_run_a_model_in_java).
 
@@ -59,7 +48,7 @@ from the drop-down menu. See
 [configure product flavors in Android Studio](https://developer.android.com/studio/build/build-variants#product-flavors)
 for more details.
 
-To test the app, open the app called `TFL Image Segmentation` on your device.
+To test the app, open the app called `Isi Piringku Estimator Proporsi` on your device.
 Re-installing the app may require you to uninstall the previous installations.
 
 For gradle CLI, running `./gradlew build` can create APKs for both solutions
