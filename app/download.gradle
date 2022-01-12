@@ -1,0 +1,10 @@
+apply plugin: 'de.undercouch.download'
+
+task downloadModelFile(type: Download) {
+    src 'https://tfhub.dev/google/seefood/segmenter/mobile_food_segmenter_V1/1'
+    dest project.ext.ASSET_DIR + '/lite-model_seefood_segmenter_mobile_food_segmenter_V1_1.tflite'
+    overwrite false
+}
+
+
+preBuild.dependsOn downloadModelFile

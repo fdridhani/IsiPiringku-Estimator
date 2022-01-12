@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Isi Piringku Estimator Proporsi</string>
+    <string name="is_use_gpu" translatable="false">GPU</string>
+    <string name="is_re_run_model" translatable="false">Re-run model</string>
+    <string name="is_labels_found" translatable="false">Keterangan:</string>
+    <string name="is_no_labels_found" translatable="false">Nihil</string>
+    <string name="keterangan_label">Keterangan:</string>
+    <string name="analisa_ulang">Analisa Ulang!</string>
+    <string name="identitas">identitas</string>
+</resources>

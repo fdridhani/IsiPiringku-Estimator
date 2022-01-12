@@ -1,0 +1,2 @@
+rootProject.name = 'Isi Piringku Estimator Proporsi'
+include ':app', ':lib_interpreter', ':lib_task_api', ':lib_utils'
